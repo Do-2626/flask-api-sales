@@ -10,8 +10,7 @@ from bson.objectid import ObjectId
 # ##############[ models.py ]####################
 # ###############################################
 # ###############################################
-from flask_pymongo import PyMongo
-from config import MONGO_URI
+from flask_pymongo import PyMongo 
 from datetime import datetime
 from bson.objectid import ObjectId
 
