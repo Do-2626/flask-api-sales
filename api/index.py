@@ -1,6 +1,4 @@
-from flask import Flask, request, jsonify
-# from .models import mongo, Sale
-# from .config import MONGO_URI
+from flask import Flask, request, jsonify 
 from flask_cors import CORS, cross_origin
 import random
 from bson.objectid import ObjectId
@@ -180,6 +178,13 @@ mongo.init_app(app)
 # نقاط النهاية لـ API
 
 # ## إدارة المبيعات
+
+
+@app.route('/', methods=['GET'])
+@cross_origin()
+def index():
+  return "Hello, World!"
+
 
 
 @app.route('/sales', methods=['GET'])
