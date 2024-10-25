@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
-from models import mongo, Sale
-from config import MONGO_URI
+from .models import mongo, Sale
+from .config import MONGO_URI
 from flask_cors import CORS, cross_origin
 import random
 from bson.objectid import ObjectId
