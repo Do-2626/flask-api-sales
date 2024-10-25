@@ -13,6 +13,6 @@ def about():
     return 'About'
 
 
-@app.route('/jsonify')
-def jsonify():
+@app.route('/jsontest')
+def jsontest():
     return jsonify({"message": "Sale not found"}), 404
